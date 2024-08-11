@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(Fonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: Product Sans B;
+    src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0vw 10vw;
+    z-index: 99;
+}
+
+nav a, i{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+    font-size: 1.5vw;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg, rgb(129, 66, 35), rgb(67, 45, 39));
+}
+
+.one h1{
+    font-size: 15vw;
+    align-items: center;
+    font-family: Product Sans B;
+    color: #fff;
+}
+
+#coffee{
+    position: absolute;
+    width: 20%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#beans2{
+    position: absolute;
+    width: 18%;
+    z-index: 3;
+    top: 65%;
+    right: 35%;
+    rotate: -40deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+
+#beans{
+    position: absolute;
+    top: 5%;
+    left: 34%;
+    width: 17%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s; 
+}
+
+#leaf{
+    top: 12%;
+    left: 1%;
+    width: 18%;
+    transform: rotate(60deg);
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 15%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#splash{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    right: 0%;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(61, 33, 26);
+}
+
+.lft, .rgt{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 5vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lft svg{
+    margin-left: 15%;
+    margin-top: -45vh;
+    width: 40%;
+    transform: rotateX(30deg) ;
+}
+
+.two h1{
+    font-size: 6vw;
+    width: 90%;
+    color: #fff;
+}
+
+.two p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+.three{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background:linear-gradient(160deg, rgb(203, 183, 153) , rgb(67, 45, 39));
+}
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card h1{
+    margin-top: 40vh;
+    font-size: 2vw;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: rgb(0, 98, 65);
+    padding: 1vw 2vw;
+}
+
+.classicVanilla{
+    top: -12%;
+    width: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.mochaDelight{
+    top: -12%;
+    width: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.vanilla{
+    top: -31%;
+    width: 15vw;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.cocoa{
+    top: -23%;
+    width: 18vw;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
